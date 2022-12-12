@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Meny</string>
+    <string name="toggle_flash">Toggle Flash</string>
+    <string name="action_settings">Settings</string>
+    <string name="scanned_data">Scanned Data</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_inicio">Início</string>
+    <string name="menu_pesquisa">Pesquisa</string>
+    <string name="menu_pedidos">Pedidos</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_produtos">Produtos</string>
+    <string name="menu_financeiro">Financeiro</string>
+    <string name="menu_config">Config</string>
+
+    <string name="text_valor">R$ %1$s</string>
+    <string name="mais_item">mais %1$d item</string>
+    <string name="value_required">Valor Requerido</string>
+
+</resources>

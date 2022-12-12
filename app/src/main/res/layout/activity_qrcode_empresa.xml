@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".activity.empresa.EmpresaQRcodeActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/scrollView2"
+            app:layout_constraintEnd_toEndOf="@id/scrollView2"
+            app:layout_constraintStart_toStartOf="@id/scrollView2"
+            app:layout_constraintTop_toBottomOf="@id/scrollView2">
+
+            <TextView
+                android:id="@+id/texto"
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Sua empresa será encontrada no aplicativo através desse QR Code."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/LL"
+                app:layout_constraintEnd_toEndOf="@+id/LL"
+                app:layout_constraintStart_toStartOf="@+id/LL"
+                app:layout_constraintTop_toBottomOf="@+id/LL" />
+
+            <ImageView
+                android:id="@+id/qr_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"                 app:layout_constraintBottom_toBottomOf="@+id/LL"
+                app:layout_constraintEnd_toEndOf="@+id/LL"
+                app:layout_constraintStart_toStartOf="@+id/LL"
+                app:layout_constraintTop_toBottomOf="@+id/texto"/>
+
+            <LinearLayout
+                android:id="@+id/LL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/qr_image">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/save_barcode"
+                    style="@style/Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:text="Salvar QR Code" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

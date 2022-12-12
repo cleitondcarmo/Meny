@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cardapiodigital">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.cardapiodigital">
+        <activity android:name="com.example.cardapiodigital.activity.usuario.PedidoDetalheActivity"></activity>
+        <activity android:name="com.example.cardapiodigital.activity.usuario.UsuarioResumoPedidoActivity" />
+        <activity android:name="com.example.cardapiodigital.activity.usuario.CarrinhoActivity" />
+        <activity android:name="com.example.cardapiodigital.activity.empresa.EmpresaProdutoDetalhesActivity" />
+        <activity android:name="com.example.cardapiodigital.activity.empresa.EmpresaCardapioActivity" />
+        <activity android:name="com.example.cardapiodigital.activity.empresa.EmpresaFormProdutoActivity" />
+        <activity android:name="com.example.cardapiodigital.activity.empresa.EmpresaQRcodeActivity" />
+        <activity android:name="com.example.cardapiodigital.activity.empresa.EmpresaCategoriasActivity" />
+        <activity android:name="com.example.cardapiodigital.activity.empresa.EmpresaConfigActivity" />
+        <activity android:name="com.example.cardapiodigital.activity.usuario.UsuarioFavoritosActivity" />
+        <activity android:name="com.example.cardapiodigital.activity.usuario.UsuarioPerfilActivity" />
+        <activity android:name="com.example.cardapiodigital.activity.empresa.EmpresaHomeActivity" />
+        <activity android:name="com.example.cardapiodigital.activity.empresa.EmpresaFinalizaCadastroActivity" />
+        <activity
+            android:name="com.example.cardapiodigital.activity.usuario.UsuarioHomeActivity"
+            android:theme="@style/Theme.cardapiodigital" />
+        <activity android:name="com.example.cardapiodigital.activity.usuario.UsuarioFinalizaCadastroActivity" />
+        <activity
+            android:name="com.example.cardapiodigital.activity.autenticacao.CriarContaActivity"
+            android:theme="@style/Theme.cardapiodigital2" />
+        <activity
+            android:name="com.example.cardapiodigital.activity.autenticacao.RecuperarContaActivity"
+            android:theme="@style/Theme.cardapiodigital2" />
+        <activity
+            android:name="com.example.cardapiodigital.activity.autenticacao.LoginActivity"
+            android:theme="@style/Theme.cardapiodigital2" />
+        <activity
+            android:name="com.example.cardapiodigital.activity.app.SplashActivity"
+            android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.cardapiodigital.activity.MainActivity" />
+    </application>
+
+</manifest>

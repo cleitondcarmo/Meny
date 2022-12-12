@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activity.empresa.EmpresaFinalizaCadastroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:id="@+id/img_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="selecionarLogo"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sua_logo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Nome da empresa"
+                />
+
+            <EditText
+                android:id="@+id/edt_nome"
+                style="@style/Edit_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Ex Pazzaria do Chefe"
+                android:inputType="text"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" />
+
+            <TextView
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Descrição"
+                />
+
+            <EditText
+                android:id="@+id/edt_desc"
+                style="@style/Descricao"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:hint="Ex Você é muito bem vindo a pizzaria da Bella, faça o seu pedido e logo será entregue."
+                android:inputType="textMultiLine"
+                android:maxLength="70"
+                android:textAlignment="textStart"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" />
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Categoria" />
+
+            <EditText
+                android:id="@+id/edt_categoria"
+                style="@style/Edit_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Ex Lanches"
+                android:inputType="text"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginTop="16dp"
+                android:onClick="validaDados"
+                android:text="Finalizar" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:theme="@style/ThemeProgressBar2"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

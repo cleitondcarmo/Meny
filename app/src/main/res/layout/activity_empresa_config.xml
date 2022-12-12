@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activity.empresa.EmpresaConfigActivity">
+
+    <include
+        android:id="@+id/include6"
+        layout="@layout/toolbar_salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:id="@+id/img_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="selecionarLogo"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sua_logo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Nome da empresa" />
+
+            <EditText
+                style="@style/Edit_Text"
+                android:id="@+id/edt_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex Pizzaria da Bella"
+                android:inputType="text"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" />
+
+            <TextView
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição"
+                />
+
+            <EditText
+                android:id="@+id/edt_desc"
+                style="@style/Descricao"
+                android:layout_width="match_parent"
+                android:hint="Ex Seja muito bem vindo a pizzaria da Bella, faça o seu pedido que logo será entregue."
+                android:inputType="textMultiLine"
+                android:maxLength="70"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" />
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoria" />
+
+            <EditText
+                android:id="@+id/edt_categoria"
+                style="@style/Edit_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex Lanches"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
