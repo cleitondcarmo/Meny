@@ -10,11 +10,9 @@
 
 
 <div align="center">
-    <h2><p>Telas</p></h2>
-    <p></p>
     <div>
         <p></p>
-        <h4>Telas iniciais</h4>
+        <h2>Telas iniciais</h2>
         <p></p>
         <div><img src="https://raw.githubusercontent.com/cleitondcarmo/Meny/main/img/cadastro.jpeg" width="400px"/></div>
         <p></p>
@@ -27,7 +25,7 @@
     </div>
     <div>
         <p></p>
-        <h4>Telas do cliente</h4>
+        <h2>Telas do cliente</h2>
         <p></p>
         <div><img src="https://raw.githubusercontent.com/cleitondcarmo/Meny/main/img/inicio-cliente.jpeg" width="400px" height="600px"/></div>
         <p></p>
@@ -47,7 +45,7 @@
         <p></p>
      </div>
      <div>
-         <h4>Telas da empresa</h4>
+         <h2>Telas da empresa</h2>
          <p></p>
          <div><img src="https://raw.githubusercontent.com/cleitondcarmo/Meny/main/img/pedidos-empresa.jpeg" width="400px" height="600px"/></div>
          <p></p>
