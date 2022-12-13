@@ -13,7 +13,7 @@
     <h2><p>Telas</p></h2>
     <div>
         <h4>Telas iniciais</h4>
-        <div><img src="https://raw.githubusercontent.com/cleitondcarmo/Meny/main/img/cadastro.jpeg" width="400px" height="600px" margin:"10px"/></div>
+        <div style="height: 800px"><img src="https://raw.githubusercontent.com/cleitondcarmo/Meny/main/img/cadastro.jpeg" width="400px"  margin:"10px"/></div>
         <div><img src="https://raw.githubusercontent.com/cleitondcarmo/Meny/main/img/login.jpeg" width="400px" height="600px"/></div>
         <div><img src="https://raw.githubusercontent.com/cleitondcarmo/Meny/main/img/recuperarconta.jpeg" width="400px" height="600px"/></div>
         <div><img src="https://raw.githubusercontent.com/cleitondcarmo/Meny/main/img/cadastro.jpeg" width="400px" height="600px"/></div>
