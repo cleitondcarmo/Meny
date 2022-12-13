@@ -12,5 +12,5 @@
 <div align="center">
     <h2><p>Telas</p></h2>
     <h4>Tela inicial</h4>
-    <p>![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img/inicio-cliente.jpeg) width="75%"/></p>
+    ![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img/inicio-cliente.jpeg)
 </div>
