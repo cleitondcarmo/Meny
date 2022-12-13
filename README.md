@@ -12,5 +12,5 @@
 <div align="center">
     <h2><p>Telas</p></h2>
     <h4>Tela inicial</h4>
-    ![alt text](https://raw.githubusercontent.com/cleitondcarmo/Meny/main/img/inicio-cliente.jpeg)
+    <img src="https://raw.githubusercontent.com/cleitondcarmo/Meny/main/img/inicio-cliente.jpeg" width="75%"/>
 </div>
