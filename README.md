@@ -12,5 +12,5 @@
 <div align="center">
     <h2><p>Telas</p></h2>
     <h4>Tela inicial</h4>
-    <img src="https://raw.githubusercontent.com/cleitondcarmo/Meny/main/img/inicio-cliente.jpeg" width="200px" height="200px"/>
+    <img src="https://raw.githubusercontent.com/cleitondcarmo/Meny/main/img/inicio-cliente.jpeg" width="500px" height="600px"/>
 </div>
